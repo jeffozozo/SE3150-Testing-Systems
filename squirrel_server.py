@@ -9,7 +9,7 @@ class SquirrelServerHandler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         resourceName, resourceId = self.parsePath()
-        if resourceName == "squirrels" or resourceName == "squirrel":
+        if resourceName == "squirrels":
             if resourceId:
                 self.handleSquirrelsRetrieve(resourceId)
             else:
