@@ -56,7 +56,7 @@ curl -X GET http://127.0.0.1:8080/squirrels/1
 ### Create
 **POST /squirrels**  
 Body must be URL-encoded form data containing `name` and `size`.  
-Returns the created object (or confirmation).
+Returns 201 Created.
 
 ```bash
 curl -X POST http://127.0.0.1:8080/squirrels   -d "name=Fluffy&size=large"
